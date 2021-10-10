@@ -35,7 +35,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Build react
-        run: yarn build
+        run: npm build
 
       # Install surge
       - name: Install Surge
@@ -43,4 +43,4 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Deploy react to surge
-        run: surge ./build context-reducer.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./build moazzam-context-reducer.surge.sh --token ${{ secrets.SURGE_TOKEN }}
