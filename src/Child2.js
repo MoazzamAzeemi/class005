@@ -8,8 +8,8 @@ function Child2() {
       <div className="yellow">
         <p>This is Child2</p>
         <p>Current state from useReducer is : {state}  </p>
-        <button onClick={()=>{dispatch({type:"Add", value:27});}}>Add</button>&nbsp;&nbsp;&nbsp;
-        <button onClick={()=>{dispatch({type:"Subtract", value:45});}}>Subtract</button>
+        <button onClick={()=>{dispatch({type:"Add", val:27});}}>Add</button>&nbsp;&nbsp;&nbsp;
+        <button onClick={()=>{dispatch({type:"Subtract", val:45});}}>Subtract</button>
       </div>
     );
   }
