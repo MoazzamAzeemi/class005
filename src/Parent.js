@@ -4,8 +4,8 @@ import Child2 from "./Child2";
 
 function Parent() {
     return (
-      <div className="">
-        <p>This is Parent</p>
+      <div className="blue">
+        <p>This is from Parent</p>
         <Child1 />
         <Child2 />
       </div>

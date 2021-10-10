@@ -1,13 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import "./App.css";
 import Parent from "./Parent";
+import ValueContext from "./ValueContext";
+
 
 function App() {
-  return (
-    <div className="App">
-      <p>This is the main App</p>
-      <Parent />
-    </div>
+    let value = useState(9);
+    return (
+    <ValueContext.Provider value={value}>
+      <div className="App">        
+        <Parent />
+      </div>
+    </ValueContext.Provider>
   );
 }
 
