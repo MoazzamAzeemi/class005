@@ -6,7 +6,7 @@ function Child1() {
     return (
       <div className="green">
         <p>This is from Child1</p>
-        <p>Current number from Child1 using useContext is {v[0]}</p>
+        <p>Current value from Child1 using useContext is {v[0]}</p>
         <button onClick={()=>{v[1](++v[0])}}>increase value</button>&nbsp;&nbsp;&nbsp;
         <button onClick={()=>{v[1](--v[0])}}>decrease value</button>
       </div>
